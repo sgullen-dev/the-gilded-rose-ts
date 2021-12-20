@@ -2,6 +2,7 @@ import { Item } from './Items/item';
 import { updateNormalItem } from './Items/normal';
 import { isAged, updateAgedItem } from './Items/aged';
 import { isBackstagePass, updateBackstagePass } from './Items/backstagePass';
+import { isConjured, updateConjuredItem } from './Items/conjured';
 
 export default class GildedRose {
   items: Item[];
@@ -13,6 +14,7 @@ export default class GildedRose {
     this.items.push(new Item('Elixir of the Mongoose', 5, 7));
     this.items.push(new Item('Sulfuras, Hand of Ragnaros', 0, 80));
     this.items.push(new Item('Backstage passes to a TAFKAL80ETC concert', 15, 20));
+    this.items.push(new Item('Conjured Mana Cake', 3, 6));
   }
 
   updateQuality(): this {
@@ -20,6 +22,7 @@ export default class GildedRose {
       if (item.name === 'Sulfuras, Hand of Ragnaros') return;
       else if (isAged(item)) updateAgedItem(item);
       else if (isBackstagePass(item)) updateBackstagePass(item);
+      else if (isConjured(item)) updateConjuredItem(item);
       else updateNormalItem(item);
     })
     return this;

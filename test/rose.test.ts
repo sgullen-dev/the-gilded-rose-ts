@@ -19,7 +19,7 @@ describe('update', () => {
         { name: 'Elixir of the Mongoose', quality: 7, sellIn: 5 },
         { name: 'Sulfuras, Hand of Ragnaros', quality: 80, sellIn: 0 },
         { name: 'Backstage passes to a TAFKAL80ETC concert', quality: 20, sellIn: 15 },
-        // { name: 'Conjured Mana Cake', quality: 6, sellIn: 3 }
+        { name: 'Conjured Mana Cake', quality: 6, sellIn: 3 }
       ]);
     })
     it('is correct on first day', () => {
@@ -30,7 +30,7 @@ describe('update', () => {
         { name: 'Elixir of the Mongoose', quality: 6, sellIn: 4 },
         { name: 'Sulfuras, Hand of Ragnaros', quality: 80, sellIn: 0 },
         { name: 'Backstage passes to a TAFKAL80ETC concert', quality: 21, sellIn: 14 },
-        // { name: 'Conjured Mana Cake', quality: 4, sellIn: 2 }
+        { name: 'Conjured Mana Cake', quality: 4, sellIn: 2 }
       ]);
     })
     it('is correct after 3 days', () => {
@@ -41,7 +41,7 @@ describe('update', () => {
         { name: 'Elixir of the Mongoose', quality: 4, sellIn: 2 },
         { name: 'Sulfuras, Hand of Ragnaros', quality: 80, sellIn: 0 },
         { name: 'Backstage passes to a TAFKAL80ETC concert', quality: 23, sellIn: 12 },
-        // { name: 'Conjured Mana Cake', quality: 0, sellIn: 0 }
+        { name: 'Conjured Mana Cake', quality: 0, sellIn: 0 }
       ]);
     })
     it('is correct after 5 days', () => {
@@ -53,7 +53,7 @@ describe('update', () => {
         { name: 'Sulfuras, Hand of Ragnaros', quality: 80, sellIn: 0 },
         // FIXME Below looks like a bug, on sellin 10 it should increase by 2 to 26
         { name: 'Backstage passes to a TAFKAL80ETC concert', quality: 25, sellIn: 10 },
-        // { name: 'Conjured Mana Cake', quality: 0, sellIn: -2 }
+        { name: 'Conjured Mana Cake', quality: 0, sellIn: -2 }
       ]);
     })
     it('is correct after 11 days', () => {
@@ -64,7 +64,7 @@ describe('update', () => {
         { name: 'Elixir of the Mongoose', quality: 0, sellIn: -6 },
         { name: 'Sulfuras, Hand of Ragnaros', quality: 80, sellIn: 0 },
         { name: 'Backstage passes to a TAFKAL80ETC concert', quality: 38, sellIn: 4 },
-        // { name: 'Conjured Mana Cake', quality: 0, sellIn: -8 }
+        { name: 'Conjured Mana Cake', quality: 0, sellIn: -8 }
       ]);
     })
     it('is correct after 15 days', () => {
@@ -75,7 +75,7 @@ describe('update', () => {
         { name: 'Elixir of the Mongoose', quality: 0, sellIn: -10 },
         { name: 'Sulfuras, Hand of Ragnaros', quality: 80, sellIn: 0 },
         { name: 'Backstage passes to a TAFKAL80ETC concert', quality: 50, sellIn: 0 },
-        // { name: 'Conjured Mana Cake', quality: 0, sellIn: -12 }
+        { name: 'Conjured Mana Cake', quality: 0, sellIn: -12 }
       ]);
     })
     it('is correct after 16 days', () => {
@@ -86,7 +86,7 @@ describe('update', () => {
         { name: 'Elixir of the Mongoose', quality: 0, sellIn: -11 },
         { name: 'Sulfuras, Hand of Ragnaros', quality: 80, sellIn: 0 },
         { name: 'Backstage passes to a TAFKAL80ETC concert', quality: 0, sellIn: -1 },
-        // { name: 'Conjured Mana Cake', quality: 0, sellIn: -13 }
+        { name: 'Conjured Mana Cake', quality: 0, sellIn: -13 }
       ]);
     })
   });
