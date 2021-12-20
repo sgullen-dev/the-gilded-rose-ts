@@ -1,14 +1,4 @@
-class Item {
-  name: string;
-  sellIn: number;
-  quality: number;
-
-  constructor(name: string, sellIn: number, quality: number) {
-    this.name = name;
-    this.sellIn = sellIn;
-    this.quality = quality;
-  }
-}
+import { Item } from './Items/item';
 
 export default class GildedRose {
   items: Item[];
